@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/pagespeed.py https://slayradio.ch --strategy mobile)",
+      "Bash(python3 scripts/fetch_page.py https://slayradio.ch --output /tmp/slayradio_home.html)",
+      "Bash(python3 scripts/robots_checker.py https://slayradio.ch)",
+      "Bash(python3 scripts/parse_html.py /tmp/slayradio_home.html --url https://slayradio.ch --json)",
+      "Bash(python3 scripts/social_meta.py https://slayradio.ch)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 scripts/social_meta.py https://slayradio.ch)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 scripts/redirect_checker.py https://slayradio.ch)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 scripts/security_headers.py https://slayradio.ch)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 scripts/internal_links.py https://slayradio.ch --depth 1 --max-pages 15)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 scripts/broken_links.py https://slayradio.ch --workers 5)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 scripts/pagespeed.py https://slayradio.ch --strategy mobile)"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+scripts/__pycache__/
+scripts/*.pyc
+seo-report-*.html
+plan.md
+prompt.json
+.agent

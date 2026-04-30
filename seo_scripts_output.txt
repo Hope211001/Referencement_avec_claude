@@ -1,0 +1,92 @@
+
+=== social_meta.py ===
+Social Meta Tags — https://slayradio.ch/
+==================================================
+Score: 100/100
+
+Open Graph (7/7):
+  ✅ og:title: Slay Radio | Web Radio Suisse Romande — House, Afrobeat & R&...
+  ✅ og:description: Écoute Slay Radio, la web radio suisse romande 100% musicale...
+  ✅ og:image: https://slayradio.ch/image/og-default.png
+  ✅ og:url: https://slayradio.ch/
+  ✅ og:type: website
+  ✅ og:site_name: Slay Radio
+  ✅ og:locale: fr_CH
+
+Twitter Card (6/6):
+  ✅ twitter:card: summary_large_image
+  ✅ twitter:title: Slay Radio | Web Radio Suisse Romande — House, Afrobeat & R&
+  ✅ twitter:description: Écoute Slay Radio, la web radio suisse romande 100% musicale
+  ✅ twitter:image: https://slayradio.ch/image/og-default.png
+  ✅ twitter:site: @SlayRadio
+  ✅ twitter:creator: @SlayRadio
+
+Social Preview:
+  Title: Slay Radio | Web Radio Suisse Romande — House, Afrobeat & R&B en Direct 24h/24
+  Description: Écoute Slay Radio, la web radio suisse romande 100% musicale. House, afrobeat et
+  Image: https://slayradio.ch/image/og-default.png
+
+Issues:
+  ⚠️ og:title is too long (78 chars, max 60)
+  ⚠️ twitter:title is too long (78 chars, max 70)
+
+
+=== security_headers.py ===
+Security Headers — https://slayradio.ch/
+==================================================
+✅ HTTPS: Yes
+Security Score: 100/100
+
+✅ Present (6):
+  HSTS (Strict-Transport-Security): max-age=31536000; includeSubDomains
+  Content-Security-Policy (CSP): default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanag
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), accelerometer=(), 
+
+
+=== redirect_checker.py ===
+Redirect Chain — https://slayradio.ch/
+==================================================
+  ✅ [200] https://slayradio.ch/ (1853ms) — FINAL
+
+Total hops: 0 | Total time: 1853ms
+
+
+
+=== robots_checker.py ===
+robots.txt Analysis — https://slayradio.ch/robots.txt
+==================================================
+Status: 200
+
+Sitemaps (1):
+  • https://slayradio.ch/sitemap.xml
+
+User-Agents (12):
+  *: 6 disallow, 1 allow
+  GPTBot: 0 disallow, 1 allow
+  ChatGPT-User: 0 disallow, 1 allow
+  ClaudeBot: 0 disallow, 1 allow
+  anthropic-ai: 0 disallow, 1 allow
+  PerplexityBot: 0 disallow, 1 allow
+  Google-Extended: 0 disallow, 1 allow
+  Applebot-Extended: 0 disallow, 1 allow
+  Bytespider: 0 disallow, 1 allow
+  CCBot: 0 disallow, 1 allow
+  FacebookBot: 0 disallow, 1 allow
+  Amazonbot: 0 disallow, 1 allow
+
+AI Crawler Management:
+  ℹ️ GPTBot: explicitly allowed
+  ℹ️ ChatGPT-User: explicitly allowed
+  ℹ️ ClaudeBot: explicitly allowed
+  ℹ️ PerplexityBot: explicitly allowed
+  ℹ️ Google-Extended: explicitly allowed
+  ℹ️ Applebot-Extended: explicitly allowed
+  ℹ️ Bytespider: explicitly allowed
+  ℹ️ CCBot: explicitly allowed
+  ℹ️ anthropic-ai: explicitly allowed
+  ℹ️ FacebookBot: explicitly allowed
+  ℹ️ Amazonbot: explicitly allowed
+

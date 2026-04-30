@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KPPC3Q263R"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-KPPC3Q263R');
+		</script>
+
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+		<title>Slay Radio — Web Radio Suisse 100% Musicale | Écoute 24h/24</title>
+
+		<meta name="description" content="Slay Radio — web radio suisse 100% musicale depuis la Suisse romande. Écoutez nos DJs en live 24h/24, découvrez leurs mix house, afrobeat et R&B. Réservez vos événements musicaux.">
+
+		<link rel="canonical" href="https://slayradio.ch/">
+
+				<meta property="og:type" content="website">
+		<meta property="og:locale" content="fr_CH">
+		<meta property="og:site_name" content="Slay Radio">
+		<meta property="og:title" content="Slay Radio — Web Radio Suisse 100% Musicale">
+		<meta property="og:description" content="Web radio suisse 100% musicale depuis la Suisse romande. Écoutez nos DJs en live 24h/24, découvrez leurs mix house, afrobeat et R&B.">
+		<meta property="og:image" content="https://slayradio.ch/image/og-default.jpg">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:image:alt" content="Slay Radio — Web Radio Suisse 100% Musicale">
+		<meta property="og:url" content="https://slayradio.ch/">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@slayradio1">
+		<meta name="twitter:title" content="Slay Radio — Web Radio Suisse 100% Musicale">
+		<meta name="twitter:description" content="Web radio suisse 100% musicale depuis la Suisse romande. Écoutez nos DJs en live 24h/24, mix house, afrobeat et R&B.">
+		<meta name="twitter:image" content="https://slayradio.ch/image/og-default.jpg">
+		
+		<!-- Tailwind CSS CDN -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							title:   ['Black Ops One', 'sans-serif'],
+							heading: ['Permanent Marker', 'sans-serif'],
+							body:    ['Archivo Black', 'sans-serif'],
+							sans:    ['Archivo Black', 'sans-serif'],
+						},
+						colors: {
+							border:      'hsl(var(--border))',
+							input:       'hsl(var(--input))',
+							ring:        'hsl(var(--ring))',
+							background:  'hsl(var(--background))',
+							foreground:  'hsl(var(--foreground))',
+							primary:     { DEFAULT: 'hsl(var(--primary))', foreground: 'hsl(var(--primary-foreground))' },
+							secondary:   { DEFAULT: 'hsl(var(--secondary))', foreground: 'hsl(var(--secondary-foreground))' },
+							destructive: { DEFAULT: 'hsl(var(--destructive))', foreground: 'hsl(var(--destructive-foreground))' },
+							muted:       { DEFAULT: 'hsl(var(--muted))', foreground: 'hsl(var(--muted-foreground))' },
+							accent:      { DEFAULT: 'hsl(var(--accent))', foreground: 'hsl(var(--accent-foreground))' },
+							sidebar:     { DEFAULT: 'hsl(var(--sidebar-background))', foreground: 'hsl(var(--sidebar-foreground))' },
+						},
+						borderRadius: {
+							lg: 'var(--radius)',
+							md: 'calc(var(--radius) - 2px)',
+							sm: 'calc(var(--radius) - 4px)',
+						},
+					}
+				}
+			}
+		</script>
+
+		<script type="module" src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@latest/dist/turbo.es2017-esm.min.js"></script>
+
+		<link rel="stylesheet" href="/styles/styles.css">
+		<link rel="stylesheet" href="/styles/carousel.css">
+		
+		<!-- 🎸 Google Fonts - chargement non-bloquant -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Permanent+Marker&family=Archivo+Black&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Permanent+Marker&family=Archivo+Black&display=swap" media="print" onload="this.media='all'">
+		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Permanent+Marker&family=Archivo+Black&display=swap"></noscript>
+
+		<style>
+			/* ========================================
+           🎸 SLAY RADIO - ROCK ALTERNATIF REBEL
+           Typographie Artistique
+           ======================================== */
+
+			/* GRANDS TITRES - H1 */
+			h1 {
+				font-family: 'Black Ops One', sans-serif;
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: -0.02em;
+			}
+
+			/* SOUS-TITRES - H2 */
+			h2 {
+				font-family: 'Permanent Marker', sans-serif;
+				font-weight: 400;
+			}
+
+			/* SOUS-TITRES - H3 */
+			h3 {
+				font-family: 'Permanent Marker', sans-serif;
+				font-weight: 400;
+			}
+
+			/* SOUS-TITRES - H4, H5, H6 */
+			h4,
+			h5,
+			h6 {
+				font-family: 'Permanent Marker', sans-serif;
+				font-weight: 400;
+			}
+
+			/* PARAGRAPHES & TEXTE BODY */
+			p {
+				font-family: 'Archivo Black', sans-serif;
+				font-weight: 400;
+				letter-spacing: 0.02em;
+				line-height: 1.6;
+			}
+
+			/* TEXTE GÉNÉRAL (body, div, span par défaut) */
+			body {
+				font-family: 'Archivo Black', sans-serif;
+				font-weight: 400;
+			}
+
+			/* LABELS & PETITS TEXTES */
+			label,
+			small {
+				font-family: 'Archivo Black', sans-serif;
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+			}
+
+			/* BOUTONS */
+			button,
+			.btn {
+				font-family: 'Permanent Marker', sans-serif;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+
+			/* LIENS */
+			a {
+				font-family: 'Archivo Black', sans-serif;
+				font-weight: 400;
+			}
+
+			/* ========================================
+           ANIMATIONS
+           ======================================== */
+
+			@keyframes scroll {
+				0% {
+					transform: translateX(100%);
+				}
+
+				100% {
+					transform: translateX(-100%);
+				}
+			}
+
+			.scrolling-text {
+				animation: scroll 25s linear infinite;
+				white-space: nowrap;
+			}
+
+			@keyframes fade-in {
+				from {
+					opacity: 0;
+					transform: translateY(20px);
+				}
+
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			@keyframes equalizer {
+
+				0,
+				100% {
+					height: 8px;
+				}
+
+				50% {
+					height: 100%;
+				}
+			}
+
+			.animate-fade-in {
+				animation: fade-in 1s ease-out;
+			}
+
+			.animate-equalizer {
+				animation: equalizer 0.8s ease-in-out infinite;
+			}
+
+		</style>
+
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+		<!-- Select2 -->
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+		<!-- Sweet alert -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+		<!-- fontawesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+		<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "RadioStation",
+    "name": "Slay Radio",
+    "description": "Web radio suisse 100% musicale, diffusée en ligne 24h/24 depuis la Suisse romande. Écoutez nos DJs en live, découvrez leurs mix house, afrobeat et R&B.",
+    "url": "https://slayradio.ch/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://slayradio.ch/image/logo.jpg",
+      "width": 400,
+      "height": 400
+    },
+    "image": "https://slayradio.ch/image/og-default.jpg",
+    "broadcastFrequency": "Online",
+    "broadcastTimezone": "Europe/Zurich",
+    "foundingDate": "2024",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Suisse romande",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CH"
+      }
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@slayradio.ch",
+      "contactType": "customer service",
+      "availableLanguage": "French"
+    },
+    "sameAs": [
+      "https://www.instagram.com/slayradio1/",
+      "https://www.youtube.com/channel/UCaD7SGkU6AI8liZdAKgm7nQ",
+      "https://www.tiktok.com/@slayradio1?lang=fr"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Slay Radio",
+    "url": "https://slayradio.ch/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://slayradio.ch/home/artiste?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+]
+</script>
+
+	</head>
+	<body>
+		<div id="root">
+			<div class="min-h-screen bg-background">
+				<!--  navbar -->
+<!-- Desktop -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border shadow-sm">
+	<div class="container mx-auto px-4">
+		<div class="flex items-center justify-between h-16 md:h-20">
+			<a class="flex items-center gap-3" href="/">
+				<img src="/image/logo.jpg" alt="Slay Radio — Web Radio Suisse" width="180" height="50" class="h-10 md:h-12 w-auto rounded-lg" loading="eager">
+				<span class="text-xl font-bold text-primary">SLAY RADIO</span>
+			</a>
+			<div class="hidden lg:flex items-center gap-8">
+				<a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group text-primary"
+					href="/">
+					Accueil
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 bg-primary transition-all w-full"></span>
+				</a>
+				<a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group "
+					href="/home/artiste">
+					Artistes
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 bg-primary transition-all w-0 group-hover:w-full"></span>
+				</a>
+				<a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group "
+					href="/home/podcast">
+					Podcasts
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 bg-primary transition-all w-0 group-hover:w-full"></span>
+				</a>
+				<a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group "
+					href="/home/mix">
+					Mix
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 bg-primary transition-all w-0 group-hover:w-full"></span>
+				</a>
+				<a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group "
+					href="/boutique">
+					Boutique
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 bg-primary transition-all w-0 group-hover:w-full"></span>
+				</a>
+				<a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group "
+					href="/apropos">
+					À propos
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 bg-primary transition-all w-0 group-hover:w-full"></span>
+				</a>
+				<a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group "
+					href="/panier">
+					Mon Panier
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 bg-primary transition-all w-0 group-hover:w-full"></span>
+				</a>
+			</div>
+			<div class="hidden lg:flex items-center gap-4">
+
+								
+				
+			</div>
+
+			<!-- BOUTON BURGER (visible mobile) -->
+			<button id="burgerBtn" class="lg:hidden p-2 text-foreground">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none"
+					stroke="currentColor" stroke-width="2" class="w-6 h-6">
+					<line x1="4" x2="20" y1="12" y2="12" />
+					<line x1="4" x2="20" y1="6" y2="6" />
+					<line x1="4" x2="20" y1="18" y2="18" />
+				</svg>
+			</button>
+
+		</div>
+	</div>
+</nav>
+
+<!-- AUDIO PLAYER HEADER (sous la navbar) - permanent: reste actif sur toutes les sections -->
+<div id="radio-player-bar" data-turbo-permanent class="fixed top-16 md:top-20 left-0 right-0 z-40 bg-primary shadow-xl">
+	<div class="container mx-auto px-4 py-2 sm:py-3">
+		<div class="flex items-center gap-3 sm:gap-4">
+			<!-- Live = toujours en lecture. Clic = couper/remettre le son (jamais pause). -->
+			<button id="playBtnTop" type="button"
+				class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-primary-foreground flex items-center justify-center shadow-2xl hover:scale-110 transition-transform flex-shrink-0">
+				<!-- Play -->
+				<svg id="iconSoundOff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+					fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-primary ml-1">
+					<polygon points="6 3 20 12 6 21 6 3"></polygon>
+				</svg>
+				<!-- Pause -->
+				<svg id="iconSoundOn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+					fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-primary hidden">
+					<rect x="14" y="4" width="4" height="16" rx="1"></rect>
+					<rect x="6" y="4" width="4" height="16" rx="1"></rect>
+				</svg>
+			</button>
+
+			<!-- Scrolling Text -->
+			<div class="flex-1 overflow-hidden min-w-0">
+				<div class="scrolling-text text-primary-foreground font-bold text-sm sm:text-lg md:text-xl lg:text-2xl">
+					Slay, votre radio 100% digitale, 100% musicale, 24h/24
+				</div>
+			</div>
+
+			<!-- Live Indicator (toujours actif) -->
+			<div class="flex items-center gap-2 bg-red-500 px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-full flex-shrink-0">
+				<span class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-white animate-pulse"></span>
+				<span class="text-xs sm:text-sm font-bold text-white hidden sm:inline">LIVE</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- MENU MOBILE (slide depuis le bas) -->
+<div id="mobileMenu"
+	class="fixed inset-0 z-50 bg-background/95 backdrop-blur-xl translate-y-full transition-transform duration-300 flex flex-col p-6">
+	<!-- en-tête -->
+	<div class="flex items-center justify-between mb-8">
+		<span class="text-lg font-bold text-primary">Menu</span>
+		<button id="closeMenuBtn" class="p-2 text-foreground">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none"
+				stroke="currentColor" stroke-width="2" class="w-6 h-6">
+				<line x1="18" y1="6" x2="6" y2="18" />
+				<line x1="6" y1="6" x2="18" y2="18" />
+			</svg>
+		</button>
+	</div>
+
+	<!-- liens -->
+	<nav class="flex flex-col gap-6 text-lg font-medium text-foreground uppercase">
+		<a href="/"
+			class="menu-link hover:text-primary transition-colors text-primary font-bold">Accueil</a>
+		<a href="/home/artiste"
+			class="menu-link hover:text-primary transition-colors ">Artistes</a>
+		<a href="/home/podcast"
+			class="menu-link hover:text-primary transition-colors ">Podcasts</a>
+		<a href="/home/mix"
+			class="menu-link hover:text-primary transition-colors ">Mix</a>
+		<a href="/boutique"
+			class="menu-link hover:text-primary transition-colors ">Boutique</a>
+		<a href="/apropos"
+			class="menu-link hover:text-primary transition-colors ">À
+			propos</a>
+		<a href="/panier"
+			class="menu-link hover:text-primary transition-colors ">À
+			Mon Panier</a>
+	</nav>
+
+		
+	
+
+</div>
+<!--  end navbar -->				<!--  navbar -->
+				<div class="fixed top-4 left-1/2 -translate-x-1/2 z-[60] w-[calc(100%-2rem)] sm:w-full sm:max-w-md pointer-events-none">
+					<div class="pointer-events-auto">
+						
+
+<style>
+    /* Styles pour les messages flash */
+    .flash-success {
+        background-color: #D1FAE5;
+        border-left: 4px solid #10B981;
+        color: #065F46;
+    }
+
+    .flash-error,
+    .flash-danger {
+        background-color: #FEE2E2;
+        border-left: 4px solid #EF4444;
+        color: #991B1B;
+    }
+
+    .flash-warning {
+        background-color: #FEF3C7;
+        border-left: 4px solid #F59E0B;
+        color: #92400E;
+    }
+
+    .flash-info {
+        background-color: #DBEAFE;
+        border-left: 4px solid #3B82F6;
+        color: #1E40AF;
+    }
+
+    /* Animation d'entrée */
+    @keyframes slide-in {
+        from {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .animate-slide-in {
+        animation: slide-in 0.3s ease-out;
+    }
+
+    /* Animation de sortie */
+    @keyframes slide-out {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+
+    .flash-message.removing {
+        animation: slide-out 0.3s ease-out forwards;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Fermeture manuelle des messages
+        document.querySelectorAll('.close-flash').forEach(button => {
+            button.addEventListener('click', function() {
+                const flashMessage = this.closest('.flash-message');
+                flashMessage.classList.add('removing');
+                setTimeout(() => flashMessage.remove(), 300);
+            });
+        });
+
+        // Auto-fermeture après 2 secondes
+        document.querySelectorAll('.flash-message').forEach(flash => {
+            setTimeout(() => {
+                flash.classList.add('removing');
+                setTimeout(() => flash.remove(), 300);
+            }, 2000);
+        });
+    });
+</script>					</div>
+				</div>
+				<main>
+					
+	<!--  hero -->
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+<!-- HERO SECTION -->
+<section class="relative flex items-center justify-center overflow-hidden pt-32 sm:pt-36 md:pt-40">
+
+    <!-- Background Gradient -->
+    <div class="absolute inset-0 gradient-hero"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_hsl(220,20%,8%)_70%)]"></div>
+
+    <!-- Animated circles -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-secondary/20 rounded-full blur-3xl animate-pulse"
+        style="animation-delay: 1s;"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 container mx-auto px-4 text-center mb-16 mt-6">
+        <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 animate-fade-in px-4">
+
+            <!-- Title -->
+            <h1 class="leading-tight text-primary-foreground uppercase"
+                style="font-family: 'Anton', sans-serif; font-size: clamp(2rem, 6vw, 5rem); letter-spacing: 0.02em;">
+                Slay Radio — Votre Web Radio Suisse<br>
+                <span class="text-accent">Écoutez vos DJs favoris 24h/24</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-sm sm:text-base md:text-lg lg:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+                La web radio suisse 100% musicale depuis la Suisse romande. Découvrez nos DJs, mix house, afrobeat et R&B, en direct et en replay.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+                <a href="/home/mix"
+                    class="inline-flex items-center justify-center gap-2 h-10 sm:h-11 rounded-md bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-6 sm:px-8 text-sm sm:text-base md:text-lg font-semibold transition-colors hover:scale-105 transition-transform">
+                    Écouter maintenant
+                </a>
+                <a href="/home/artiste"
+                    class="inline-flex items-center justify-center gap-2 h-10 sm:h-11 rounded-md border border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-6 sm:px-8 text-sm sm:text-base md:text-lg transition-colors hover:scale-105 transition-transform">
+                    Découvrir les artistes
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+	<!-- mix -->
+	<!-- mix dj -->
+<section class="py-12 md:py-20">
+	<div class="container mx-auto px-4">
+
+		<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 md:mb-12">
+			<div>
+				<p class="text-blue-600 font-medium text-sm uppercase tracking-wider mb-2">Nos morceaux
+				</p>
+				<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Mix Dj disponible
+				</h2>
+			</div>
+			<a href="/home/mix">
+				<button class="hover:scale-105 transition-transform inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-10 px-4 py-2 border border-gray-300 bg-white hover:bg-gray-100">
+					Voir tous les Mix Dj
+				</button>
+			</a>
+		</div>
+
+		<div class="relative">
+
+			<!-- CAROUSEL RESPONSIVE -->
+						<div id="mixCarousel" class="responsive-carousel flex lg:grid overflow-x-auto lg:overflow-visible lg:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6 pb-4 lg:pb-0 px-2 sm:px-4 lg:px-0">
+									
+<div class="flex flex-col items-center justify-center py-16 text-center col-span-full">
+    <img src="/image/logoslayradio.jpeg"
+     alt="Slay Radio" width="128" height="128" loading="lazy" class="w-32 h-32 object-contain mb-6 opacity-70 rounded-2xl shadow-lg grayscale hover:grayscale-0 hover:opacity-40 transition-all duration-500">
+    <h6 class="text-lg sm:text-xl font-semibold text-gray-700 mb-2">
+        Aucuns mixs trouvés
+    </h6>
+    <p class="text-sm text-gray-500">
+        Essayez d&#039;ajouter des filtres ou de modifier votre recherche.
+    </p>
+</div>
+				
+			</div>
+		</div>
+
+		<!-- Navigation : flèches + indicateurs inline -->
+			</div>
+</section>
+<!-- mix dj-->
+
+<script>
+	(function () {
+		if (window.__mixCardAudioInit) return;
+		window.__mixCardAudioInit = true;
+
+		// On stocke la src (stable) plutôt que la référence DOM (obsolète après Turbo)
+		let currentAudio = null;
+		let currentSrc   = null;
+		let currentBtn   = null;
+		// Flag d'intention : true si l'utilisateur a demandé la lecture,
+		// indépendamment de l'état transitoire de audio.paused pendant le chargement
+		let isIntendedToPlay = false;
+
+		function setBtnState(btn, isPlaying) {
+			const playIcon  = btn.querySelector('.js-icon-play');
+			const pauseIcon = btn.querySelector('.js-icon-pause');
+			if (!playIcon || !pauseIcon) return;
+			playIcon.classList.toggle('hidden', isPlaying);
+			pauseIcon.classList.toggle('hidden', !isPlaying);
+		}
+
+		// Après chaque navigation Turbo, retrouver le bouton correspondant
+		// à la piste en cours et restaurer son état visuel.
+		// On utilise isIntendedToPlay plutôt que !currentAudio.paused car pendant
+		// le chargement audio.paused peut être true alors que la lecture est demandée.
+		function syncButtonState() {
+			if (!currentSrc) return;
+			document.querySelectorAll('.js-mix-play').forEach(function (btn) {
+				if (btn.dataset.audioSrc === currentSrc) {
+					setBtnState(btn, isIntendedToPlay);
+					currentBtn = btn; // mise à jour vers le nouveau nœud DOM
+				} else {
+					setBtnState(btn, false);
+				}
+			});
+		}
+
+		// Avant que Turbo cache la page, sauvegarde l'état dans le DOM
+		// → la version cachée affiche déjà le bon bouton
+		document.addEventListener('turbo:before-cache', syncButtonState);
+		// Après chaque rendu Turbo (cache ou contenu frais), restaure l'état
+		document.addEventListener('turbo:render',       syncButtonState);
+		document.addEventListener('turbo:load',         syncButtonState);
+
+		document.addEventListener('click', function (e) {
+			const btn = e.target.closest('.js-mix-play');
+			if (!btn) return;
+
+			const src = btn.dataset.audioSrc;
+			if (!src) return;
+
+			// Nouvelle piste (ou première lecture)
+			if (!currentAudio || currentSrc !== src) {
+				if (currentAudio) {
+					currentAudio.pause();
+					currentAudio.currentTime = 0;
+				}
+				if (currentBtn) setBtnState(currentBtn, false);
+
+				currentAudio = new Audio(src);
+				currentSrc   = src;
+				currentBtn   = btn;
+
+				currentAudio.addEventListener('ended', function () {
+					isIntendedToPlay = false;
+					// currentBtn peut avoir été mis à jour par syncButtonState
+					if (currentBtn) setBtnState(currentBtn, false);
+					currentAudio = null;
+					currentSrc   = null;
+					currentBtn   = null;
+				});
+
+				// Quand le navigateur commence vraiment à jouer (fin de buffering),
+				// resynchronise les boutons du DOM actuel (utile après navigation Turbo)
+				currentAudio.addEventListener('playing', syncButtonState);
+
+				isIntendedToPlay = true;
+				currentAudio.play().catch(function () {
+					isIntendedToPlay = false;
+					setBtnState(btn, false);
+				});
+				setBtnState(btn, true);
+				return;
+			}
+
+			// Toggle play/pause sur la même piste
+			if (currentAudio.paused) {
+				isIntendedToPlay = true;
+				currentAudio.play().catch(function () {
+					isIntendedToPlay = false;
+					setBtnState(btn, false);
+				});
+				setBtnState(btn, true);
+			} else {
+				isIntendedToPlay = false;
+				currentAudio.pause();
+				setBtnState(btn, false);
+			}
+		});
+	})();
+</script>
+
+	<!-- artiste -->
+	<!-- artiste -->
+<section class="py-12 md:py-20">
+	<div class="container mx-auto px-4">
+
+		<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 md:mb-12">
+			<div>
+				<p class="text-blue-600 font-medium text-sm uppercase tracking-wider mb-2">Talents Slay
+				</p>
+				<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Découvertes</h2>
+			</div>
+			<a href="/home/decouverte">
+				<button class="hover:scale-105 transition-transform inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-10 px-4 py-2 border border-gray-300 bg-white hover:bg-gray-100">
+					Voir tous les Découvertes
+				</button>
+			</a>
+		</div>
+
+		<div class="relative">
+
+			<!-- CAROUSEL RESPONSIVE -->
+						<div id="artistCarousel"
+				class="responsive-carousel flex lg:grid overflow-x-auto lg:overflow-visible lg:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6 pb-4 lg:pb-0 px-2 sm:px-4 lg:px-0">
+								
+<div class="flex flex-col items-center justify-center py-16 text-center col-span-full">
+    <img src="/image/logoslayradio.jpeg"
+     alt="Slay Radio" width="128" height="128" loading="lazy" class="w-32 h-32 object-contain mb-6 opacity-70 rounded-2xl shadow-lg grayscale hover:grayscale-0 hover:opacity-40 transition-all duration-500">
+    <h6 class="text-lg sm:text-xl font-semibold text-gray-700 mb-2">
+        Aucuns découvertes trouvés
+    </h6>
+    <p class="text-sm text-gray-500">
+        Essayez d&#039;ajouter des filtres ou de modifier votre recherche.
+    </p>
+</div>
+				
+			</div>
+		</div>
+
+		<!-- Navigation : flèches + indicateurs inline -->
+			</div>
+</section>
+<!-- end artiste-->
+
+	<!-- podcast -->
+	<!-- podcast -->
+<section class="py-12 md:py-20">
+	<div class="container mx-auto px-4">
+
+		<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 md:mb-12">
+			<div>
+				<p class="text-blue-600 font-medium text-sm uppercase tracking-wider mb-2">Nos podcasts
+				</p>
+				<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Podcast / Shows / Playlist Video
+				</h2>
+			</div>
+			<a href=/home/podcast>
+				<button class="hover:scale-105 transition-transform inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-10 px-4 py-2 border border-gray-300 bg-white hover:bg-gray-100">
+					Voir tous les podcats
+				</button>
+			</a>
+		</div>
+
+		<div class="relative">
+
+			<!-- CAROUSEL RESPONSIVE -->
+						<div id="podcastCarousel" class="responsive-carousel flex lg:grid overflow-x-auto lg:overflow-visible lg:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6 pb-4 lg:pb-0 px-2 sm:px-4 lg:px-0">
+
+					                                            
+<div class="flex flex-col items-center justify-center py-16 text-center col-span-full">
+    <img src="/image/logoslayradio.jpeg"
+     alt="Slay Radio" width="128" height="128" loading="lazy" class="w-32 h-32 object-contain mb-6 opacity-70 rounded-2xl shadow-lg grayscale hover:grayscale-0 hover:opacity-40 transition-all duration-500">
+    <h6 class="text-lg sm:text-xl font-semibold text-gray-700 mb-2">
+        Aucuns podcasts trouvés
+    </h6>
+    <p class="text-sm text-gray-500">
+        Revenez plus tard ou modifiez vos critères de recherche.
+    </p>
+</div>
+                    
+			</div>
+		</div>
+
+		<!-- Navigation : flèches + indicateurs inline -->
+			</div>
+</section>
+<!-- podcast-->
+
+	<!-- boutique -->
+	<!-- boutique -->
+<section class="py-12 md:py-20 bg-gray-100">
+	<div class="container mx-auto px-4">
+
+		<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 md:mb-12">
+			<div>
+				<p class="text-blue-600 font-medium text-sm uppercase tracking-wider mb-2">Notre
+					                                    Boutique</p>
+				<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Nos Produits
+				</h2>
+			</div>
+			<a href="/boutique">
+				<button class="hover:scale-105 transition-transform inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-10 px-4 py-2 border border-gray-300 bg-white hover:bg-gray-100">
+					Voir la boutique
+				</button>
+			</a>
+		</div>
+
+		<div class="relative">
+
+			<!-- CAROUSEL RESPONSIVE BOUTIQUE -->
+						<div id="shopCarousel" class="responsive-carousel flex lg:grid overflow-x-auto lg:overflow-visible lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6 pb-4 lg:pb-0 px-2 sm:px-4 lg:px-0">
+
+				                                        
+<div class="flex flex-col items-center justify-center py-16 text-center col-span-full">
+    <img src="/image/logoslayradio.jpeg"
+     alt="Slay Radio" width="128" height="128" loading="lazy" class="w-32 h-32 object-contain mb-6 opacity-70 rounded-2xl shadow-lg grayscale hover:grayscale-0 hover:opacity-40 transition-all duration-500">
+    <h6 class="text-lg sm:text-xl font-semibold text-gray-700 mb-2">
+        Aucuns produits trouvés
+    </h6>
+    <p class="text-sm text-gray-500">
+        Revenez plus tard ou modifiez vos critères de recherche.
+    </p>
+</div>
+                    			</div>
+
+			</div>
+		</div>
+
+		<!-- Navigation : flèches + indicateurs inline -->
+			</div>
+</section>
+<!-- endboutique -->
+
+	<!-- evenement -->
+	<!-- Evenement -->
+<section class="py-12 md:py-20">
+	<div class="container mx-auto px-4">
+
+		<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 md:mb-12">
+			<div>
+				<p class="text-blue-600 font-medium text-sm uppercase tracking-wider mb-2">Nos evenement
+				</p>
+				<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Evenement
+					                                    disponible</h2>
+			</div>
+			<a href="/home/evenement">
+				<button class="hover:scale-105 transition-transform inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-10 px-4 py-2 border border-gray-300 bg-white hover:bg-gray-100">
+					Voir tous les Evenement
+				</button>
+			</a>
+		</div>
+
+		<div class="relative">
+
+			<!-- CAROUSEL RESPONSIVE -->
+						<div id="eventCarousel" class="responsive-carousel flex lg:grid overflow-x-auto lg:overflow-visible lg:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6 pb-4 lg:pb-0 px-2 sm:px-4 lg:px-0">
+				                                         
+<div class="flex flex-col items-center justify-center py-16 text-center col-span-full">
+    <img src="/image/logoslayradio.jpeg"
+     alt="Slay Radio" width="128" height="128" loading="lazy" class="w-32 h-32 object-contain mb-6 opacity-70 rounded-2xl shadow-lg grayscale hover:grayscale-0 hover:opacity-40 transition-all duration-500">
+    <h6 class="text-lg sm:text-xl font-semibold text-gray-700 mb-2">
+        Aucuns événements trouvés
+    </h6>
+    <p class="text-sm text-gray-500">
+        Revenez plus tard ou modifiez vos critères de recherche.
+    </p>
+</div>
+                    			</div>
+		</div>
+
+		<!-- Navigation : flèches + indicateurs inline -->
+			</div>
+</section>
+<!-- Evenement-->
+
+	<!--CTA-->
+	<!--  CTA -->
+<section class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 md:py-12 px-4">
+	<div class="max-w-4xl mx-auto text-center">
+		<h2 class="text-xl md:text-3xl font-extrabold mb-2">Prêt à vivre l'expérience Slay Radio ?</h2>
+		<div>
+            <h5 class="font-bold mb-4">Suivez-nous</h5>
+			<div class="flex justify-center items-center space-x-4 mb-4 py-2">
+				<a href="https://www.youtube.com/channel/UCaD7SGkU6AI8liZdAKgm7nQ" target="_blank"
+				class="transition transform hover:scale-110">
+					<svg class="h-8 w-8" viewBox="0 0 24 24" role="img" aria-label="YouTube">
+						<path fill="#FF0000" d="M23.498 6.186a2.999 2.999 0 0 0-2.112-2.13C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.386.556a2.999 2.999 0 0 0-2.112 2.13A31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .502 5.814 2.999 2.999 0 0 0 2.112 2.13C4.5 20.5 12 20.5 12 20.5s7.5 0 9.386-.556a2.999 2.999 0 0 0 2.112-2.13A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.502-5.814z"/>
+						<path fill="#FFFFFF" d="M9.75 15.5l6-3.5-6-3.5v7z"/>
+					</svg>
+				</a>
+
+				<a href="https://www.instagram.com/slayradio1/" target="_blank"
+				class="transition transform hover:scale-110">
+					<img src="/image/social_media_instagram.png"
+						alt="Instagram Slay Radio"
+						width="32" height="32" loading="lazy"
+						class="h-8 w-8 object-contain">
+				</a>
+
+				<a href="https://www.tiktok.com/@slayradio1?lang=fr" target="_blank"
+				class="transition transform hover:scale-110">
+					<img src="/image/social_media_tiktok.png"
+						alt="TikTok Slay Radio"
+						width="32" height="32" loading="lazy"
+						class="h-8 w-8 object-contain">
+				</a>
+			</div>
+
+        </div>
+		<div class="flex flex-col md:flex-row justify-center items-stretch md:items-center gap-2 md:gap-4 max-w-md md:max-w-2xl mx-auto">
+			<a href="/home/artiste" class="px-4 md:px-6 py-2 md:py-3 rounded-lg border-2 border-white text-white text-sm md:text-base font-bold hover:bg-white hover:text-blue-600 transition-all duration-200 active:scale-95 text-center">
+				Découvrir les artistes
+			</a>
+			<!-- Bouton -->
+			<a href="/boutique" class="px-4 md:px-6 py-2 md:py-3 rounded-lg bg-white text-blue-600 text-sm md:text-base font-bold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl active:scale-95 text-center">
+				Découvrir la boutique
+			</a>
+		</div>
+	</div>
+</section>
+<!-- end CTA -->
+
+				</main>
+				<!--<audio id="radioPlayer" hidden></audio>-->
+
+				<!-- Footer -->
+				<!-- Footer -->
+<footer class="bg-card border-t border-border">
+	<div class="container mx-auto py-12">
+
+		<div
+			class="flex flex-nowrap gap-4 md:gap-6 lg:gap-8 justify-center text-center">
+
+			<!-- Carte 1 -->
+			<div class="w-1/4 space-y-2 flex flex-col items-center">
+				<a class="flex items-center gap-2 md:gap-3 justify-center" href="/">
+					<img src="/image/logo.jpg" alt="Slay Radio — Web Radio Suisse" width="180" height="50" loading="lazy" class="h-8 md:h-12 w-auto rounded-lg">
+					<span class="text-sm md:text-xl font-bold text-primary hidden sm:flex">SLAY RADIO</span>
+				</a>
+				<p class="text-[11px] md:text-sm text-muted-foreground">
+					La web-radio, 100% musicale dédiée à vos DJs favoris.
+				</p>
+			</div>
+
+			<!-- Carte 2 -->
+			<div class="w-1/4 flex flex-col items-center">
+				<h4 class="font-semibold text-[12px] md:text-base text-foreground mb-2 md:mb-3">
+					Navigation
+				</h4>
+				<ul class="space-y-1 md:space-y-2">
+					<li>
+						<a class="text-[11px] md:text-sm text-muted-foreground hover:text-primary" href="/">Accueil</a>
+					</li>
+					<li>
+						<a class="text-[11px] md:text-sm text-muted-foreground hover:text-primary" href="/home/mix">Mix</a>
+					</li>
+					<li>
+						<a class="text-[11px] md:text-sm text-muted-foreground hover:text-primary" href="/home/artiste">Artistes</a>
+					</li>
+					<li>
+						<a class="text-[11px] md:text-sm text-muted-foreground hover:text-primary" href="/apropos">À propos</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Carte 3 -->
+			<div class="w-1/4 flex flex-col items-center">
+				<h4 class="font-semibold text-[12px] md:text-base text-foreground mb-2 md:mb-3">
+					Contact
+				</h4>
+				<ul class="space-y-1 md:space-y-2">
+					<li>
+						<a href="mailto:contact@slayradio.ch"
+						target="_blank"
+						class="text-[11px] md:text-sm text-muted-foreground hover:underline">
+							contact@slayradio.ch
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<!-- Bas du footer -->
+		<div class="border-t border-border mt-6 md:mt-8 pt-4 md:pt-6 text-center">
+			<p class="text-[11px] md:text-sm text-muted-foreground">
+				© 2026 Slay Radio. Tous droits réservés.
+			</p>
+			<div data-turbo-permanent id="radio-player-permanent">
+                <audio id="global-radio-player" controls preload="none" class="w-full" hidden>
+					<source src="https://prod.radio.slay-radio.databoost.mg/radio" type="audio/mpeg">
+				</audio>
+            </div>
+			
+		</div>
+
+	</div>
+</footer>
+<!-- End Footer -->
+			</div>
+		</div>
+		<!-- PANIER MINI -->
+<div
+	id="cart" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50
+				            w-[320px] max-w-[90vw]
+				            bg-background border border-border rounded-xl shadow-2xl ring-1 ring-border
+				            px-3 py-3 text-xs
+				            transition-all duration-300 translate-y-full opacity-0 pointer-events-none">
+
+	<!-- entête -->
+	<div class="flex items-center justify-between mb-2">
+		<h3 class="font-semibold text-foreground text-sm">Mon panier</h3>
+		<button onclick="toggleCart()" class="text-muted-foreground hover:text-foreground">
+			<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+				<line x1="18" y1="6" x2="6" y2="18"/>
+				<line x1="6" y1="6" x2="18" y2="18"/>
+			</svg>
+		</button>
+	</div>
+
+	<!-- corps -->
+	<div id="cartBody" class="space-y-2 max-h-32 overflow-y-auto">
+							<p class="text-muted-foreground text-sm">Votre panier est vide.</p>
+			</div>
+
+	<!-- total + CTA -->
+	<div class="mt-2 pt-2 border-t border-border">
+		<div class="flex justify-between items-center mb-2">
+			<span class="text-muted-foreground">Total</span>
+									<span id="cartTotal" class="font-semibold text-foreground">0.00 €</span>
+		</div>
+		<a href="/panier" class="block w-full text-center gradient-primary text-primary-foreground rounded-md py-1.5 text-sm hover:scale-105 transition-transform">
+			Voir mon panier
+		</a>
+	</div>
+</div>
+
+		<!-- ========= SCRIPTS ========= -->
+		<script src="/js/main.js"></script>
+		<script src="/js/panier.js"></script>
+		<script src="/js/cart_preview.js"></script>
+		<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+		<script>
+			(function () {
+				const streamUrl = 'https://prod.radio.slay-radio.databoost.mg/radio' // ton API Icecast
+				function updateMuteIcons(muted) {
+				var onEl = document.getElementById('iconSoundOn');
+				var offEl = document.getElementById('iconSoundOff');
+				if (! onEl || ! offEl) 
+				return;
+
+				if (muted) {
+				onEl.classList.add('hidden');
+				offEl.classList.remove('hidden');
+				} else {
+				onEl.classList.remove('hidden');
+				offEl.classList.add('hidden');
+				}
+				}
+
+				function initRadio() {
+				var radio = document.getElementById('global-radio-player');
+				var playBtn = document.getElementById('playBtnTop');
+				if (! radio || ! playBtn) 
+				return;
+
+				if (! radio.src || radio.src === '') {
+				radio.src = streamUrl;
+				radio.muted = true;
+				}
+				updateMuteIcons(radio.muted);
+
+				playBtn.onclick = function () {
+				radio.muted = ! radio.muted;
+				if (radio.muted) {
+				radio.pause();
+				} else { // Forcer une reconnexion au flux live à chaque reprise (évite le buffer désynchronisé)
+				radio.src = streamUrl + '?_=' + Date.now();
+				radio.load();
+				radio.play().catch(function (err) {
+				alert(err.message);
+				console.warn('Radio play:', err);
+				});
+				} updateMuteIcons(radio.muted);
+				};
+				}
+
+				document.addEventListener('DOMContentLoaded', initRadio);
+				document.addEventListener('turbo:load', initRadio);
+				})();
+		</script>
+		
+	</body>
+
+</html>
